@@ -40,8 +40,13 @@
 
         .main-info .avatar {
             filter: grayscale(1);
-            width: 300px;
+            width: 150px;
             height: auto;
+            transition: filter 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .main-info .avatar:hover {
+            filter: grayscale(0);
         }
 
         .main-info a:hover {
@@ -68,10 +73,12 @@
 
 <body>
     <div class="main-info">
-        <img src="https://avatars.githubusercontent.com/u/15357833" alt="avatar" class="avatar">
+        <a href="https://github.com/mewforest/">
+            <img src="https://avatars.githubusercontent.com/u/15357833" alt="avatar" class="avatar">
+        </a>
         <h1>Hi, My name is Mew Forest</h1>
         <h3>
-            <a href="https://mewforest.github.io/donate.html">Do you want to donate me? 🙂</a>).
+            <a href="https://mewforest.github.io/donate.html">Do you want to donate me?</a>🙂
         </h3>
     </div>
     <a href="https://github.com/mewforest/" class="footer-url">https://github.com/mewforest/</a>
